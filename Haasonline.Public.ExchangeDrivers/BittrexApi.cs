@@ -633,6 +633,7 @@ namespace Haasonline.Public.ExchangeDriver.Bittrex
         // Not relavent for spot
         public DateTime SettlementDate { get; set; }
         public List<decimal> Leverage { get; set; }
+        public string UnderlyingCurrency { get; set; }
         public string ContractName { get; set; }
 
         public Market(JObject data)
@@ -645,6 +646,7 @@ namespace Haasonline.Public.ExchangeDriver.Bittrex
 
                 PrimaryCurrency = data.Value<string>("MarketCurrency");
                 SecondaryCurrency = data.Value<string>("BaseCurrency");
+                UnderlyingCurrency = PrimaryCurrency;
                 Fee = 0.25M;
                 PriceDecimals = 8;
                 MinimumTradeVolume = 0.0005M;

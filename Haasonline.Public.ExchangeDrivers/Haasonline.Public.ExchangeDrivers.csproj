@@ -45,8 +45,9 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="TradeServer.ScriptingDriver">
-      <HintPath>..\..\Haasonline.Public.ExchangeDriver.Bittrex\lib\TradeServer.ScriptingDriver.dll</HintPath>
+    <Reference Include="TradeServer.ScriptingDriver, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\TradeServer.ScriptingDriver.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
